@@ -10,18 +10,43 @@
 using namespace std;
 
 int main() {
-    int x = 5; // init variable
-    int *xPtr = &x; // init pointer
+    int n; // init n
+    // Init calculated variables;
+    int sum = 0;
+    float avg = 0;
+    int min = 0;
+    int max = 0;
 
-    // Print variables
-    cout << "x: " << x << endl;
-    cout << "*x: " << &x << endl;
-    cout << "xPtr: " << xPtr << endl;
-    cout << "*xPtr: " << *xPtr << endl;
+    // Get user input for array size;
+    cout << "Enter an array size: ";
+    cin >> n;
 
-    x = 10; // Change value of x
+    int* arr = new int[n]; // init array
 
-    cout << "New x value: " << x << endl; // Print x with modified value
+    // Fill array
+    for (int i = 0; i < arr.size(); i++) {
+        int userInput;
+        cout << "Enter value att arr index " << i << ": ";
+        cin >> userInput;
+
+        *(arr + i) = userInput;
+
+        // Add to sum
+        sum += userInput;
+        
+        // Check if min
+        if (i = 0 || userInput < min) {
+            min = userInput;
+        }
+
+        // Check if max
+        if (i = 0 || userInput > max) {
+            max = userInput;
+        }
+    }
+
+    avg = sum/n; // Calculate average;
+ 
 
     return 0;
 }
