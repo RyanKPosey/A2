@@ -1,9 +1,9 @@
 /*
     Professor: Dr. Barnett
     Programmer: Ryan Posey
-    Assignment: A1
+    Assignment: A2
     Class: CS1C
-    Purpose: Practice using poitners
+    Purpose: Practice using dynamically allocated arrays
 */
 #include <iostream>
 
