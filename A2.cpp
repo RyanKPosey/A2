@@ -28,6 +28,7 @@ int main() {
         int userInput;
         cout << "Enter value at arr index " << i << ": ";
         cin >> userInput;
+        cout << endl;
 
         *(arr + i) = userInput;
 
