@@ -24,9 +24,9 @@ int main() {
     int* arr = new int[n]; // init array
 
     // Fill array
-    for (int i = 0; i < arr.size(); i++) {
+    for (int i = 0; i < n; i++) {
         int userInput;
-        cout << "Enter value att arr index " << i << ": ";
+        cout << "Enter value at arr index " << i << ": ";
         cin >> userInput;
 
         *(arr + i) = userInput;
@@ -45,13 +45,16 @@ int main() {
         }
     }
 
-    avg = sum/n; // Calculate average;
+    avg = (float)sum / n; // Calculate average;
  
     for (int i = 0; i < n; i++) {
         cout << "Arr index " << i << ": " << arr[i] << endl; // Print new array values
-
-        
     }
+
+    cout << "Sum: " << sum << endl;
+    cout << "Average: " << avg << endl;
+    cout << "Min: " << min << endl;
+    cout << "Max: " << max << endl;
 
     delete[] arr; //Free memory
     arr = nullptr;
