@@ -47,6 +47,14 @@ int main() {
 
     avg = sum/n; // Calculate average;
  
+    for (int i = 0; i < n; i++) {
+        cout << "Arr index " << i << ": " << arr[i] << endl; // Print new array values
 
+        
+    }
+
+    delete[] arr; //Free memory
+    arr = nullptr;
+    
     return 0;
 }
