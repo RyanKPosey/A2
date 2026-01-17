@@ -35,12 +35,12 @@ int main() {
         sum += userInput;
         
         // Check if min
-        if (i = 0 || userInput < min) {
+        if (i == 0 || userInput < min) {
             min = userInput;
         }
 
         // Check if max
-        if (i = 0 || userInput > max) {
+        if (i == 0 || userInput > max) {
             max = userInput;
         }
     }
@@ -55,6 +55,6 @@ int main() {
 
     delete[] arr; //Free memory
     arr = nullptr;
-    
+
     return 0;
 }
